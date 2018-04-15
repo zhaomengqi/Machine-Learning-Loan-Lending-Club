@@ -14,7 +14,7 @@ Including:
 • Feature engineering: What variables do you need to predict interest rates? Ensure users would be
 able to give you that information to help you predict rates
 
-• You need to create one more pipeline to do this for the “Declined Loan data”. Repeat above steps NOTE: NO HUMAN INTERVERSION SHOULD BE NEEDED AT ALL. YOUR LUIGI/AIRFLOW script SHOULD DO EVERYTHING.
+• Create one more pipeline to do this for the “Declined Loan data”. Repeat above steps NOTE: NO HUMAN INTERVERSION SHOULD BE NEEDED AT ALL. YOUR LUIGI/AIRFLOW script SHOULD DO EVERYTHING.
 
 Exploratory Data analysis: 
 • Write a Jupyter notebook using R/Python to graphically represent different summaries of data. Summarize your findings in this notebook.
@@ -42,7 +42,7 @@ Use the “Loan Data” and the “Declined Loan Data” datasets to build class
 • Should be able to a new record (You can define what features you will use) and the result will be a flag whether it would give a loan or not.
 
 Clustering 
-Once you have decided to give a loan, build models to decide what interest rate to give. Debating whether to create one model for all customer prospects or segment data into clusters and then build prediction models specific to each cluster. think of creating segments or clusters and build models one for each cluster. with 3 possibilities:
+Decided to give a loan, build models to decide what interest rate to give. Debating whether to create one model for all customer prospects or segment data into clusters and then build prediction models specific to each cluster. think of creating segments or clusters and build models one for each cluster. with 3 possibilities:
 
 1. Segment data into clusters manually using categorical or numerical features.
 
@@ -50,7 +50,8 @@ Once you have decided to give a loan, build models to decide what interest rate 
 
 3. No clusters; Just use data as is
 Once do the clustering use t-sne to visualize your clusters for some sample test data. See http://distill.pub/2016/misread-tsne/ for guidance on using t-sne Prediction 
-• Write a prediction script in a Jupyter notebook in R/Python that builds a Regression model for the interest rate using data from the 3 clustering methodologies worked
+
+• Write a prediction script in a Jupyter notebook in Python that builds a Regression model for the interest rate using data from the 3 clustering methodologies worked
 
 o Tryvariableselectionandbuildthebestmodelforeachsegment/cluster
 
@@ -62,7 +63,7 @@ o Choose the best model amongst the 4 types of algorithms.
 
 o Deploy the best algorithm/algorithms on Azure ML studio
 
-o You will have a bunch of Rest APIs you should be able to choose from based on the cluster the record belongs to Deployment 
+o Have a bunch of Rest APIs you should be able to choose from based on the cluster the record belongs to Deployment 
 
 Design the following workflow:
 • Given a record, use a pre-trained clustering model to cluster the record to a segment.
